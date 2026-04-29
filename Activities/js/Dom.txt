@@ -1,0 +1,4 @@
+DOM doc obj model
+bridge betn javascript and html
+programming interface of htmlwhen browser load html it converts html into a object structure is called DOM
+javascript uses dom to read changes add and delete html element

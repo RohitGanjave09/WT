@@ -1,0 +1,40 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+form {
+    margin: 20px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+}
+
+table {
+    margin: auto;
+    width: 80%;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+#message {
+    color: green;
+    font-weight: bold;
+}
