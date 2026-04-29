@@ -1,0 +1,34 @@
+<h1>Experiment 8:Data Binding & Directives</h1>
+<p>Data Binding is a binding technique in Angular that connects UI to code</p>
+<p>
+  Directives are instructions in the DOM that tell Angular's HTML compiler to manipulate the DOM
+  elements
+</p>
+<h2>Welcome To Student Management</h2>
+
+<p>Name: {{ fname }}</p>
+
+<p>Roll Number: {{ myRoll }}</p>
+
+<img [src]="img" />
+<br />
+
+<button (click)="showbutton()">Click Me</button> <br /><br />
+
+<input [(ngModel)]="fname" placeholder="Enter Name" />
+<br />
+
+//ngFor
+<ul>
+  <li *ngFor="let car of cars">{{ car }}</li>
+</ul>
+
+//ngif
+<p *ngIf="fname === 'abc'">Name is abc</p>
+
+//ngSwitch
+<div [ngSwitch]="fname">
+  <p *ngSwitchCase="'abc'">Name is abc</p>
+  <p *ngSwitchCase="'def'">Name is def</p>
+  <p *ngSwitchDefault>Name is not abc or def</p>
+</div>

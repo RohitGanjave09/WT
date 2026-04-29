@@ -1,0 +1,18 @@
+express in mininmal and flexible node application framework that simplify development of web server and api's
+It provide features such as routing, middleware support, request and response handling, template rendering, REST api creation
+
+Why use express js not node js?
+
+Activity 1: 
+-diff bet package.json and package-lock.json
+-diff bet dev dependecy and dependency
+-http requests
+
+Activity 3:
+-integrate js in express
+
+In .env file we write port numbers
+
+***Routing in js
+IT is refers to determine how an application response to a client request from specific URL and http methods
+ component - URL path, http methods, handeler function
