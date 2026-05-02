@@ -1,0 +1,12 @@
+<h1>Activity 4 : API Integration</h1>
+
+<h3>Users List</h3>
+<div *ngIf="loading">
+  <p>Loading users...</p>
+</div>
+
+<ul *ngIf="!loading">
+  <li *ngFor="let user of users">
+    <strong>{{ user.name }}</strong> - {{ user.email }}
+  </li>
+</ul>

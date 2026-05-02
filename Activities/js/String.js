@@ -1,16 +1,16 @@
-let str ="rohit"
-console.log(str,typeof str);
+let str1 = "Tahir"
+console.log(str1)
+console.log(typeof str1);
 
-//String intepolation
+//String interpolation
+console.log(`Hello my name is ${str1}`);
 
-console.log(`hello my name is ${str}`);
+const count = new String("Tahir")
+console.log(count);
 
-let fName="rohit";
-console.log(`${fName}`);
-const gameCount=new String("Ak");
+console.log(count.length)
+console.log(count.toLowerCase())
+console.log(count.charAt(2));
+console.log(count.indexOf("i"));
 
-console.log(gameCount.length);
-console.log(gameCount.toLowerCase());
-console,log(gameCount.toUpperCase());
-console.log(gameCount.charAt());//2 num chya index la return kartay 
-console.log(gameCount.indexOf())//give the index of giving letter
+//*******************************Activity 2 : Undertand all string functions

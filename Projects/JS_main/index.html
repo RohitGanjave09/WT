@@ -1,0 +1,47 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Marks Calculator | JS Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h1>📚 Student Marks Manager</h1>
+    <p class="sub">Add marks · Calculate totals · Use map/filter/reduce</p>
+
+    <div class="input-area">
+      <input type="text" id="studentName" placeholder="Student name" autocomplete="off">
+      <input type="number" id="studentMarks" placeholder="Marks (0-100)">
+      <button id="addBtn">➕ Add Student</button>
+    </div>
+
+    <div class="stats">
+      <div>📊 Total Students: <span id="totalCount">0</span></div>
+      <div>🏆 Average Marks: <span id="avgMarks">0</span></div>
+      <div>✅ Passed (>40): <span id="passedCount">0</span></div>
+    </div>
+
+    <div class="controls">
+      <button id="showAllBtn">📋 Show All</button>
+      <button id="mapBonusBtn">⭐ Map → Add 5 grace marks</button>
+      <button id="filterPassBtn">🎯 Filter Passed Students</button>
+      <button id="reduceTotalBtn">📉 Reduce → Total Marks</button>
+      <button id="destructureBtn">🔓 Destructure First Student</button>
+      <button id="asyncDemoBtn">⏳ Async Demo (Promise)</button>
+    </div>
+
+    <div id="outputArea" class="output">
+      💡 Click buttons to see JavaScript in action
+    </div>
+
+    <div class="student-list">
+      <h3>📖 Student Records</h3>
+      <ul id="studentList"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

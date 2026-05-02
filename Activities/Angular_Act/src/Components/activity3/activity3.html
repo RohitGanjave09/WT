@@ -1,0 +1,35 @@
+<h1>Activity 3: Div Activities (Directives)</h1>
+
+<h3>ngIf Example</h3>
+<button (click)="toggleDiv()">Toggle Div</button>
+<div *ngIf="showDiv" class="box">This div is shown/hidden using *ngIf</div>
+
+<hr />
+
+<h3>ngSwitch Example</h3>
+<h4>Select Grade</h4>
+<select [(ngModel)]="selected">
+  <option value="A">Grade A</option>
+  <option value="B">Grade B</option>
+  <option value="C">Grade C</option>
+</select>
+
+<div [ngSwitch]="selected">
+  <div *ngSwitchCase="'A'" class="box">Excellent!</div>
+  <div *ngSwitchCase="'B'" class="box">Good!</div>
+  <div *ngSwitchCase="'C'" class="box">Average</div>
+  <div *ngSwitchDefault class="box">Select Grade</div>
+</div>
+
+<hr />
+
+<h3>ngClass Example</h3>
+<button (click)="toggleClass()">Toggle Highlight</button>
+<div class="box" [ngClass]="{ 'active-box': isActive }">Applies predefined CSS class</div>
+<hr />
+
+<h3>ngStyle Example</h3>
+<button (click)="changeStyle()">Change Style</button>
+<div class="box" [ngStyle]="{ 'background-color': bgColor, 'font-size.px': fontSize }">
+  Changes inline styles dynamically
+</div>

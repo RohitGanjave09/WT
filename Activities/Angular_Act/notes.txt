@@ -1,0 +1,65 @@
+**Activity's**:
+1. create 3 div with different background color , and 2 buttons hide and show. on click of hide button hide div1 and on click of show button show div1
+2. create a 3 div with different background color and 2 input field if both input field value is same then show div3 otherwise hide div3
+3. Write a two examples with services with angularand learn more about dependency injection
+
+
+
+
+
+***ANGULAR***:
+
+Angular is a type script based frontend framework develop by google.
+It is SPA - where page does not fully reload when navigation bet different page.
+requirement - node.js, command line interface
+
+steps to create angular application:
+    npm install node.js
+    npm install -g @angular/cli
+    ng new my-angular-app
+    cd my-angular-app
+    run - ng serve
+
+Packages List - Include dependencies(use for production build) and dev dependencies(only for local development)
+gitfiles and folders used for version control
+ts-config.json - typescript configuration file
+package.json - list of dependencies and dev dependencies
+index.html - main html file
+main.ts - entry point of angular application
+app.config.ts - configuration file for angular
+
+
+**Compoenents-
+It is a UI block or ui structure
+To create a component :
+    ng generate component component-name OR
+    ng g c component-name
+
+html, css, ts, spec.ts files are created for each component
+
+**Data Binding-
+It means connect ui to code
+Types of data binding:
+1.one way data binding - from component to ui
+    a. interpolation - {{}} - show data from ts file to html file
+    b. property binding - [] - used to bind properties of html element to component
+    c. event binding - () - used to bind events of html element to component
+
+2.two way data binding - from component to ui and ui to component
+    a. ngModel - used to bind data from component to ui and ui to component
+    syntax - [(ngModel)]="propertyName"
+
+**Directives-
+It is a special type of component that does not have a template.
+Types of directives:
+1. Structural directives - used to change the structure of the DOM
+    a. ngIf - used to conditionally render an element
+    b. ngFor - used to render a list of elements
+    c. ngSwitch - used to render different elements based on a condition
+
+2. Attribute directives - used to change the appearance or behavior of an element
+
+
+**Services-
+It is a like a helper class that used to store data and share logic so other components can use it.
+Instead of writing same code in multiple components we can write it in service

@@ -1,0 +1,58 @@
+<div class="container">
+  <h1>Simple Angular App</h1>
+  
+  <div class="counter">
+    <p class="count">{{ count() }}</p>
+    <div class="buttons">
+      <button (click)="decrement()">-</button>
+      <button (click)="reset()">Reset</button>
+      <button (click)="increment()">+</button>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  .counter {
+    text-align: center;
+  }
+  
+  .count {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #1976d2;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #1976d2;
+    color: white;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background: #1565c0;
+  }
+</style>

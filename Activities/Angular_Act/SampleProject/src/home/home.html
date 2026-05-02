@@ -1,0 +1,20 @@
+<h2>Welcome To Student Management</h2>
+
+<p>Name: {{ fname }}</p>
+
+<p>Roll Number: {{ myRoll }}</p>
+
+<img [src]="img" />
+<br />
+
+<button (click)="showbutton()">Click Me</button> <br /><br />
+
+<input [(ngModel)]="fname" placeholder="Enter Name" />
+<br />
+
+//ngFor
+<ul>
+  <li *ngFor="let car of cars">{{ car }}</li>
+</ul>
+
+//ngIf
